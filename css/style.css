@@ -1,0 +1,288 @@
+body {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Top Banner */
+.top-banner {
+  height: 50px;
+  background-color: #f6f6f6;
+}
+
+.social {
+  float: right;
+  margin-right: 20px;
+}
+
+.social li {
+  float: left;
+  margin-right: 10px;
+  line-height: 50px;
+}
+
+.social li a {
+  text-decoration: none;
+}
+
+.social li a img {
+  vertical-align: middle;
+}
+
+.fb {
+  color: #4460a0;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.twitter {
+  color: #00aaec;
+}
+
+/* Header */
+.header {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 40px;
+  padding-left: 30px;
+}
+
+.top-menu {
+  float: right;
+}
+
+.top-menu li {
+  float: left;
+  margin-right: 30px;
+  line-height: 40px;
+}
+
+.top-menu li a {
+  text-decoration: none;
+  color: #11cfa0;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: 10px;
+}
+
+.top-menu li a:hover {
+  border-bottom: 3px solid #00cc99;
+}
+
+/* Background */
+
+.banner {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  background-color: rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+.title h1 {
+  color: white;
+  font-size: 2em;
+}
+
+/* Introduction */
+.introduction {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.card-box {
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+  display: inline-block;
+  float: left;
+  width: 246px;
+  padding: 30px;
+  height: 270px;
+  box-shadow: 0 4px 5px -4px black;
+}
+
+.card-box:nth-of-type(2n) {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.card-box img {
+  display: block;
+  margin: 0 auto;
+  height: 90px;
+}
+
+.card-box h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.card-box p {
+  line-height: 1.5;
+
+}
+
+.card-box p span {
+  letter-spacing: 5px;
+}
+
+.card-box ul {
+  list-style: initial;
+}
+
+.card-box ul li {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Compare */
+.compare {
+  margin-top: 60px;
+}
+
+.compare h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.compare table {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.compare table tr {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.compare table tr th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.compare table tr td {
+  margin-left: 10px;
+}
+
+.compare table tr th,
+.compare table tr td {
+  padding: 20px;
+}
+
+.green-text {
+  color: #22b28e;
+}
+
+/* Class Form */
+.class-form {
+  margin-top: 60px;
+  background: linear-gradient(#00664c, #009772);
+  padding: 40px 30px 20px 30px;
+}
+
+.class-form h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+textarea {
+  float: left;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 0;
+  resize: none;
+}
+
+.info {
+  float: left;
+  margin-left: 30px;
+  width: 450px;
+}
+
+.info label {
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.info input[type="text"] {
+  display: block;
+  width: calc(100% - 10px);
+  margin-bottom: 25px;
+  padding: 0;
+  border: 0;
+  height: 30px;
+  font-size: 1.05em;
+  padding-left: 10px;
+}
+
+.info input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+.info button {
+  font-size: 0.7em;
+  float: right;
+  padding: 10px 30px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #00cc99;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.info button:hover {
+  background-color: #01b286;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+}
+
+.contact {
+  float: right;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact span {
+  color: #e75799;
+}
