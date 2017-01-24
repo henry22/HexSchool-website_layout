@@ -275,7 +275,7 @@ body {
   line-height: 30px;
 }
 
-textarea {
+.text-comment {
   float: left;
   font-size: 1.1em;
   border-radius: 5px;
