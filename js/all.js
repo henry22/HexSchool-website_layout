@@ -16,9 +16,13 @@ $(document).ready(function() {
     'wrapAround': true
   });
 
-  //Show button when scroll
-  $(window).scroll(function() {
-    $('.top').slideDown();
+  //Detect the scroll event to show or hide the button
+  $(window).on('DOMMouseScroll mousewheel',function(e) {
+    if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+      $('.top').slideDown(500);
+    } else {
+      $('.top').slideUp(500);
+    }
   });
 
   //Click the button and scroll to the top
